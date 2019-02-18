@@ -21,6 +21,8 @@ in package.json add scripts for build project:
     "dev": "next",
     "next": "next build",
     "build": "babel src/functions -d functions",
-    "copy": "cpx \"*{package.json,yarn.lock}\" \"functions\" && yarn"
+    "copy": "cpx \"*{package.json,yarn.lock}\" \"functions\" && yarn",
+    "deploy": "firebase deploy",
+    "function": "firebase deploy --only functions"
   }
 ```
